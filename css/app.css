@@ -1,0 +1,209 @@
+/* Nomalized the css on different browser */
+html {
+	font-size: 100%;
+}
+
+html,button,input,select,textarea {
+	font-family: sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:active, a:hover {
+	outline: 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+
+h6 {
+    font-size: 0.67em;
+    margin: 2.33em 0;
+}
+
+b,strong {
+	font-weight: bold;
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+ul {
+    padding: 0;
+    margin-left: 0;
+}
+
+#content ul, #content ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+
+input, select {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    *vertical-align: middle;
+}
+
+select {
+    text-transform: none;
+}
+
+#content {
+	border: solid 1px #5e8abf;
+	width: 300px;
+	margin: 10px;
+
+}
+
+#contacts .header {
+	font-weight: bold;
+	background: #d7e2fa;
+	padding: 5px;
+}
+#content, #contacts .header, #contacts .footer {
+	-webkit-background-clip: padding-box; background-clip: padding-box;
+}
+
+#content {
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+#contacts .header {
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+#contacts .footer {
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+#people div {
+	display: inline-block;
+	padding: 2px;
+	*display: inline;
+	zoom:1;
+}
+#people {
+	font-size: 0.9em;
+	position: relative;
+}
+
+.name {
+	width: 80px;
+}
+
+#people div.name {
+	padding: 2px 2px 2px 10px;
+	border: 1px solid white;
+	position: relative;
+}
+
+.name:hover {
+	cursor: default;
+}
+
+.email {
+	width: 190px;
+	position: relative;
+	*display: inline;
+}
+
+.phone {
+	*display: inline;
+}
+
+.info_details li {
+	margin-bottom: 5px;
+}
+.info_details {
+	*float: left;
+}
+
+.person_details {
+	border-top: 1px solid;
+	border-left: 1px solid;
+	border-bottom: 1px solid;
+	border-right: 1px solid #5e8abf;
+	z-index: 1;
+	-webkit-box-shadow: -1px 1px 4px 0px #555; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+    box-shadow: -1px 1px 4px 0px #555; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+}
+
+.person_img {
+	vertical-align: top;
+	float: right;
+}
+
+/*Footer*/
+.footer {
+	background: #d7e2fa;
+	*height: 35px;
+}
+
+.footer:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear:both;
+	visibility: hidden;
+}
+
+.footer select {
+	float: right;
+	margin: 5px;
+}
+
+.box_gradient {
+  background-color: #d7e2fa;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f6fa), to(#d7e2fa)); /* Chrome, Safari 4+ */
+  background-image: -webkit-linear-gradient(top, #f5f6fa, #d7e2fa); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+  background-image:    -moz-linear-gradient(top, #f5f6fa, #d7e2fa); /* Firefox 3.6-15 */
+  background-image:      -o-linear-gradient(top, #f5f6fa, #d7e2fa); /* Opera 11.10-12.00 */
+  background-image:         linear-gradient(to bottom, #f5f6fa, #d7e2fa); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
+}
+
+.box_shadow {
+  -webkit-box-shadow: 0px 0px 4px 0px #ffffff; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+          box-shadow: 0px 0px 4px 0px #ffffff; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+}
